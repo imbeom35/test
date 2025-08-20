@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: demo
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: "jdbc:mariadb://localhost:3306/test"
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+  oauth2:
+    authorized-redirect-uri: "http://localhost:3000/oauth2/callback"
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 472400349288-pcd7qn9dqnehe2f55l7atubo56mur0uq.apps.googleusercontent.com
+            client-secret: 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
+            scope: openid, profile,email
+
+app:
+  jwt:
+    secret: d9327f2d95b8432c87cfa3a0d87ffbc670b94902883acd32d2ff99b67539a741
+    access-token-validity-ms: 900000
+    refresh-token-validity-ms: 1209600000
