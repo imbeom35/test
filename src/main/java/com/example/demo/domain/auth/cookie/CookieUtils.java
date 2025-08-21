@@ -1,11 +1,9 @@
-package com.example.demo.domain.auth.util;
+package com.example.demo.domain.auth.cookie;
 
 import jakarta.servlet.http.*;
 import lombok.SneakyThrows;
 
 import java.io.*;
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class CookieUtils {

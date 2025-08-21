@@ -1,6 +1,6 @@
 package com.example.demo.domain.auth.jwt;
 
-import com.example.demo.domain.auth.util.CookieUtils;
+import com.example.demo.domain.auth.cookie.CookieUtils;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;

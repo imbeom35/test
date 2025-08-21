@@ -1,6 +1,5 @@
-package com.example.demo.domain.auth.oauth;
+package com.example.demo.domain.auth.cookie;
 
-import com.example.demo.domain.auth.util.CookieUtils;
 import jakarta.servlet.http.*;
 import org.springframework.security.oauth2.client.web.AuthorizationRequestRepository;
 import org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest;

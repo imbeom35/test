@@ -1,8 +1,8 @@
 package com.example.demo.global.config;
 
+import com.example.demo.domain.auth.cookie.HttpCookieOAuth2AuthorizationRequestRepository;
 import com.example.demo.domain.auth.jwt.JwtAuthenticationFilter;
 import com.example.demo.domain.auth.oauth.CustomOAuth2UserService;
-import com.example.demo.domain.auth.oauth.HttpCookieOAuth2AuthorizationRequestRepository;
 import com.example.demo.domain.auth.oauth.OAuth2AuthenticationFailureHandler;
 import com.example.demo.domain.auth.oauth.OAuth2AuthenticationSuccessHandler;
 import jakarta.servlet.http.HttpServletResponse;

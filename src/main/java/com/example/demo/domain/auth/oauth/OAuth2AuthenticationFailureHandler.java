@@ -18,7 +18,7 @@ public class OAuth2AuthenticationFailureHandler extends SimpleUrlAuthenticationF
                                         HttpServletResponse res,
                                         AuthenticationException ex)
             throws IOException, ServletException {
-        String target = "http://localhost:3000/login?error=" +
+        String target = "http://localhost:5173/login?error=" +
                 URLEncoder.encode(ex.getMessage(), StandardCharsets.UTF_8);
         getRedirectStrategy().sendRedirect(req, res, target);
     }

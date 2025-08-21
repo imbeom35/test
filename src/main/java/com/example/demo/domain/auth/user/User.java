@@ -24,10 +24,10 @@ public class User {
     private Role role;
 
     @Column(length = 50)
-    private String provider;    // e.g., google/naver/kakao
+    private String provider;
 
     @Column(length = 100)
-    private String providerId;  // sub/id
+    private String providerId;
 
     public static User ofOauth(String email, String name, String provider, String providerId, Role role) {
         return User.builder()

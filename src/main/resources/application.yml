@@ -15,8 +15,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-  oauth2:
-    authorized-redirect-uri: "http://localhost:3000/oauth2/callback"
   security:
     oauth2:
       client:

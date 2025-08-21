@@ -1,8 +1,9 @@
 package com.example.demo.domain.auth.oauth;
 
+import com.example.demo.domain.auth.cookie.HttpCookieOAuth2AuthorizationRequestRepository;
 import com.example.demo.domain.auth.jwt.JwtTokenProvider;
 import com.example.demo.domain.auth.token.TokenService;
-import com.example.demo.domain.auth.util.CookieUtils;
+import com.example.demo.domain.auth.cookie.CookieUtils;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import lombok.RequiredArgsConstructor;

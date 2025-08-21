@@ -50,7 +50,6 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
         if ("google".equalsIgnoreCase(registrationId)) {
             return (String) attrs.get("email");
         }
-        // 필요 시 네이버/카카오 매핑 추가
         return (String) attrs.get("email");
     }
 
